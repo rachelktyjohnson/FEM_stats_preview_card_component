@@ -1,7 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+span.stat-headings {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+footer.attribution a {
+  color: hsl(277deg, 64%, 61%);
 }
 
 /*# sourceMappingURL=styles.css.map */
