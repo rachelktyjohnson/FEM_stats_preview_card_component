@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +6,123 @@
   font-family: "Inter", sans-serif;
 }
 
-span.stat-headings {
+body {
+  background: hsl(233deg, 47%, 7%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body main.card {
+  border-radius: 10px;
+  background: hsl(244deg, 38%, 16%);
+  margin: 25px;
+  max-width: 350px;
+}
+@media (min-width: 600px) {
+  body main.card {
+    max-width: 1115px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+body main.card .image-container {
+  height: 210px;
+  position: relative;
+}
+@media (min-width: 600px) {
+  body main.card .image-container {
+    order: 2;
+    height: 100%;
+  }
+}
+body main.card .image-container .image {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("images/image-header-mobile.jpg");
+}
+@media (min-width: 600px) {
+  body main.card .image-container .image {
+    background-image: url("images/image-header-desktop.jpg");
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+}
+body main.card .image-container .purple-overlay {
+  background-color: #7826ab;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  body main.card .image-container .purple-overlay {
+    border-radius: 0 10px 10px 0;
+  }
+}
+body main.card .content {
+  padding: 45px 30px 10px 30px;
+  color: white;
+}
+@media (min-width: 600px) {
+  body main.card .content {
+    padding: 75px;
+    text-align: left;
+  }
+}
+body main.card .content h1 {
+  font-size: 1.7rem;
+}
+body main.card .content h1 span.callout {
+  color: hsl(277deg, 64%, 61%);
+}
+@media (min-width: 600px) {
+  body main.card .content h1 {
+    font-size: 2.1rem;
+  }
+}
+body main.card .content p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+@media (min-width: 600px) {
+  body main.card .content p {
+    margin-top: 50px;
+  }
+}
+body main.card .content .stats {
+  margin-top: 50px;
+}
+@media (min-width: 600px) {
+  body main.card .content .stats {
+    display: flex;
+    margin-top: 75px;
+  }
+}
+body main.card .content .stats .stat {
+  margin: 30px 0;
+}
+@media (min-width: 600px) {
+  body main.card .content .stats .stat {
+    margin: 0;
+    margin-right: 65px;
+  }
+}
+body main.card .content .stats .stat span.stat-headings {
   font-family: "Lexend Deca", sans-serif;
   color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+  display: block;
 }
 
 footer.attribution {
